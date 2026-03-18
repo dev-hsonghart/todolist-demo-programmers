@@ -1,24 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
+
 import './App.css';
 
 function App() {
+  let name = '테토포';
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <header className="App-header">안녕하세요 리액트 초짜입니다</header>
+      <p className="App-content">
+        병아리 개발자 {name === '테토포' ? <h1>{name}</h1> : null}에요
+      </p>
     </div>
   );
 }
