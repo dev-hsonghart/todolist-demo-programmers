@@ -3,6 +3,7 @@ import './App.css';
 import { Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Clock from './Timer';
+import TodoModal from './TodoModal';
 
 type Todo = {
   id: number;
@@ -107,6 +108,11 @@ const Todolist: React.FC = () => {
         ))}
       </ul>
       <Clock></Clock>
+      <TodoModal
+        show={showDetail}
+        todo={selectedTodo}
+        handleClose={handleCloseDetail}
+      ></TodoModal>
     </div>
   );
 };
